@@ -4,5 +4,6 @@ import svgr from '@svgr/rollup';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Portfolio-react/',
   plugins: [react(), svgr()],
 })
