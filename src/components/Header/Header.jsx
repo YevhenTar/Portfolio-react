@@ -11,7 +11,7 @@ const Header = () => {
             </div>
             <div className="main-header__button-wrap">
                 <a
-                    href="/documents/CV_Tarasov-Yevheniy_Front-End-Developer.pdf"
+                    href={`${import.meta.env.BASE_URL}documents/CV_Tarasov-Yevheniy_Front-End-Developer.pdf`}
                     className="main-header__download-btn"
                     download="CV_Tarasov-Yevheniy_Front-End-Developer.pdf"
                 >
