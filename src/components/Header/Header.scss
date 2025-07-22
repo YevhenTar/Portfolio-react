@@ -1,0 +1,92 @@
+@use "../../styles/_variables";
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 2% 0;
+  background-color: #1C1C1C;
+  &__logo-wrap {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__button-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__download-btn{
+    //background-color: blue;
+    //position: relative;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: center;
+    //align-items: center;
+    //padding: 12px 28px;
+    //border-radius: 42px;
+    //font-size: 18px;
+    //font-weight: 700;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0789ed;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 42px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+
+    .download-icon {
+      width: 18px;
+      height: 18px;
+      fill: white; // ключевой момент
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      //background-color: #292929;
+      border-color: #ffffff;
+      //transform: translateY(-1px);
+
+      //.download-icon {
+      //  fill: #0789ed;
+      //}
+    }
+
+    &:active {
+      transform: translateY(1px);
+      //opacity: 0.85;
+    }
+  }
+
+
+}
+.logo-block {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: yellow;
+  border: 3px solid gold;
+  border-radius: 50%;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+.owner-name{
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+
+

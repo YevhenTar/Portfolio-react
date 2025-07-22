@@ -1,0 +1,92 @@
+.swiper {
+  // width: 873px;
+  position: relative;
+  width: 75%;
+  overflow: visible;
+  height: 531px;
+  //padding: 0 100px; // ← добавь отступы внутри
+  @media(max-width: 1399.98px){
+    height: 478px;
+  }
+  @media(max-width: 1199.98px){
+    width: 83%;
+  }
+  @media(max-width: 991.98px){
+    width: 100%;
+    height: 458px;
+  }
+  @media(max-width: 767.98px){
+    height: 358px;
+  }
+  @media(max-width: 575.98px){
+    height: 228px;
+  }
+}
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  &__link {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &__caption-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    @media(max-width: 767.98px){
+      padding: 10px;
+    }
+  }
+  &__caption {
+    color: #fff;
+    font-size: 14px;
+    @media(max-width: 767.98px){
+      font-size: 12px;
+    }
+  }
+}
+
+.swiper-button-prev, .swiper-button-next {
+  display: none;
+  position: absolute;
+  color: #fff; // или gold, если хочешь выделить
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+
+  // можно добавить фон или обводку:
+  // background-color: rgba(0, 0, 0, 0.3);
+  // border-radius: 50%;
+  // padding: 5px;
+}
+
+.swiper-button-prev {
+  left: -100px;
+}
+
+.swiper-button-next {
+  right: -100px;
+}
+
+.swiper-pagination{
+  position: relative;
+}
+.swiper-pagination.swiper-pagination-bullets{
+  bottom: -10px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: gold;
+}

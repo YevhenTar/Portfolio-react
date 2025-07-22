@@ -1,0 +1,40 @@
+@use "../../styles/_variables";
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #0B0E11;
+  z-index: 1000;
+  &__wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: rotate 2.5s linear infinite;
+}
+.circle2 {
+  box-shadow: 0px 5px 5px 3px #F6762C;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loaded_hiding .preloader {
+  transition: 0.6s opacity;
+  opacity: 0;
+}
+.loaded .preloader {
+  display: none;
+}
