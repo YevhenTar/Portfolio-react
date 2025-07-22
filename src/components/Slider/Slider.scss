@@ -17,7 +17,7 @@
     width: 75%;
   }
   @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 500px) {
-    width: 55%;
+    width: 46%;
   }
   @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 280px) {
     width: 50%;
@@ -102,6 +102,9 @@
 
 .swiper-pagination.swiper-pagination-bullets{
   bottom: 4px;
+  @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 500px) {
+    bottom: 8px;
+  }
   @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 280px) {
     bottom: 13px;
   }
