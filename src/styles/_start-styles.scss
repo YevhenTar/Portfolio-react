@@ -1,15 +1,12 @@
 @use "_variables";
 html {
   box-sizing: border-box;
+
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
-body, html {
-  overflow-x: hidden;
-  height: 100%;
 }
 body {
   margin: 0;
@@ -20,9 +17,10 @@ body {
   color: #FFFFFF;
   line-height: 1.2;
   background-color: #645a5a;
-  //display: flex;
-  //flex-direction: column;
-  //min-height: 100vh;
+}
+body, html {
+  overflow-x: hidden;
+  height: 100%;
 }
 main{
   display: flex;
@@ -56,4 +54,12 @@ h5 {
   margin: 0;
 }
 
+#root{
+  height: 100%;
+}
 
+.content-wrap{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

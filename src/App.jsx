@@ -42,8 +42,10 @@ function App() {
       <>
           <Loader />
           <VideoBackground src="video/Octagon - 5192.mp4" />
-          <Header/>
-          <MainContent/>
+          <div className="content-wrap">
+              <Header/>
+              <MainContent/>
+          </div>
       </>
   )
 }

@@ -5,12 +5,31 @@
   justify-content: space-between;
   padding: 10px 2% 0;
   background-color: #1C1C1C;
+  margin-bottom: 8px;
+  @media screen and (max-width: 500px){
+      padding: 4px 1.5% 0;
+  }
+  @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 500px) {
+    padding: 4px 0.5% 0;
+  }
+  @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 280px) {
+    margin-bottom: 2px;
+  }
   &__logo-wrap {
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    @media screen and (max-width: 500px){
+      height: 40px;
+    }
+    @media screen and (max-width: 355px){
+      height: 30px;
+    }
+    @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 500px) {
+      height: 30px;
+    }
   }
   &__button-wrap{
     display: flex;
@@ -18,16 +37,6 @@
     align-items: center;
   }
   &__download-btn{
-    //background-color: blue;
-    //position: relative;
-    //display: flex;
-    //flex-direction: row;
-    //justify-content: center;
-    //align-items: center;
-    //padding: 12px 28px;
-    //border-radius: 42px;
-    //font-size: 18px;
-    //font-weight: 700;
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -40,27 +49,40 @@
     font-weight: 700;
     transition: all 0.3s ease;
     border: 2px solid transparent;
-
+    @media screen and (max-width: 500px){
+      gap: 4px;
+      padding: 6px 14px;
+      font-size: 12px;
+    }
+    @media screen and (max-width: 355px){
+      font-size: 11px;
+    }
+    @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 500px) {
+      gap: 4px;
+      padding: 6px 14px;
+      font-size: 12px;
+    }
     .download-icon {
       width: 18px;
       height: 18px;
-      fill: white; // ключевой момент
+      fill: white;
       transition: transform 0.3s ease;
+      @media screen and (max-width: 355px){
+        width: 14px;
+        height: 14px;
+      }
+      @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 500px) {
+        width: 14px;
+        height: 14px;
+      }
     }
 
     &:hover {
-      //background-color: #292929;
       border-color: #ffffff;
-      //transform: translateY(-1px);
-
-      //.download-icon {
-      //  fill: #0789ed;
-      //}
     }
 
     &:active {
       transform: translateY(1px);
-      //opacity: 0.85;
     }
   }
 
@@ -78,6 +100,18 @@
   padding: 10px;
   position: relative;
   z-index: 1;
+  @media screen and (max-width: 500px){
+    font-size: 14px;
+    padding: 6px;
+  }
+  @media screen and (max-width: 355px){
+    font-size: 12px;
+    padding: 4px;
+  }
+  @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 500px) {
+    font-size: 12px;
+    padding: 4px;
+  }
 }
 .owner-name{
   font-size: 20px;
@@ -86,6 +120,17 @@
   padding: 0 15px;
   position: relative;
   z-index: 1;
+  @media screen and (max-width: 500px){
+    font-size: 15px;
+    padding: 0 5px;
+  }
+  @media screen and (max-width: 355px){
+    font-size: 12px;
+  }
+  @media screen and (orientation: landscape) and (min-width: 460px) and (max-width: 920px) and (max-height: 500px) {
+    font-size: 12px;
+    padding: 0 5px;
+  }
 }
 
 
