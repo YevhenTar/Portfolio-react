@@ -7,17 +7,6 @@ import MainContent from "./components/MainContent/MainContent.jsx";
 
 function App() {
 
-    // Прелоадер: добавление классов после загрузки страницы
-    // useEffect(() => {
-    //     // Если нужно точно после загрузки всех ресурсов (включая картинки, видео):
-    //     window.onload = () => {
-    //         document.body.classList.add('loaded_hiding');
-    //         setTimeout(() => {
-    //             document.body.classList.add('loaded');
-    //             document.body.classList.remove('loaded_hiding');
-    //         }, 600);
-    //     };
-    // }, []); // ← этот массив делает эффект однократным (как componentDidMount)
     useEffect(() => {
         const onLoad = () => {
             document.body.classList.add('loaded_hiding');
