@@ -1,6 +1,6 @@
 const projects = [
     {
-        url: 'https://yevhentar.github.io/Fast-Food-Burgers/',
+        url: 'https://yevhentar.github.io/Fast-Food-react/',
         img: 'img/home-section/Fast-Food-Burgers.png',
         caption: 'Landing page of the "Fast Food" company',
     },
