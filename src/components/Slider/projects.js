@@ -5,6 +5,11 @@ const projects = [
         caption: 'Landing page of the "Fast Food" company',
     },
     {
+        url: 'https://yevhentar.github.io/Open-llm-funding/',
+        img: 'img/home-section/Open-llm-funding.png',
+        caption: 'Landing page of the Open LLM Funding project',
+    },
+    {
         url: 'https://yevhentar.github.io/Food-network-landing-page/',
         img: 'img/home-section/Food-network.png',
         caption: 'Landing page of the "Food network" company',
