@@ -6,7 +6,7 @@ const Header = () => {
         <header className="main-header">
             <div className="main-header__logo-wrap">
                 <div className="logo-block">TY</div>
-                <p className="owner-name">Tarasov Yevheniy</p>
+                <p className="owner-name">Tarasov Yevhen</p>
             </div>
         </header>
     );
