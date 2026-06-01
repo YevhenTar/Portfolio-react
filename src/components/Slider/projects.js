@@ -10,7 +10,7 @@ const projects = [
         caption: 'Landing page of the Open LLM Funding project',
     },
     {
-        url: 'https://yevhentar.github.io/Food-network-tailwind//',
+        url: 'https://yevhentar.github.io/Food-network-tailwind/',
         img: 'img/home-section/Food-network.png',
         caption: 'Landing page of the "Food network" company',
     },
