@@ -48,10 +48,10 @@ const Slider = () => {
                 {projects.map((project, index) => (
                     <SwiperSlide key={index}>
                         <a
-                            href={project.url} // ← внешний адрес
+                            href={project.url} 
                             className="swiper-slide__link"
                             onClick={() => {
-                                localStorage.setItem(LOCAL_STORAGE_KEY, index); // ← сохраняем индекс
+                                localStorage.setItem(LOCAL_STORAGE_KEY, index); 
                             }}
                         >
                             <img
